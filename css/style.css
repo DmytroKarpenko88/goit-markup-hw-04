@@ -148,15 +148,27 @@ a.current {
   color: var(--btn-color);
 }
 
+.header-contacts .mail,
+.header-contacts .tel {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.header-contacts a {
+  color: var(--additional-text-color);
+  fill: var(--additional-text-color);
+}
+
 .links-nav a:hover,
 .links-nav a:focus,
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--btn-color);
-}
-
-.header-contacts a {
-  color: #757575;
+  fill: var(--btn-color);
 }
 
 .header-contacts {
@@ -165,8 +177,15 @@ a.current {
 
 /* ---------- HERO ----------- */
 .hero {
-  background-color: var(--main-footer-background-color);
-  /* height: 600px; */
+  margin: 0 auto;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  background-size: cover;
+  max-height: 600px;
   padding: 200px 0;
 }
 
@@ -222,6 +241,14 @@ a.current {
 
 .features {
   padding-bottom: 0;
+}
+
+.features .thums {
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
+  background-color: var(--section-background-color);
+  margin-bottom: 30px;
 }
 
 .features-list {
@@ -376,7 +403,7 @@ a.current {
 .address {
   margin-top: 20px;
   font-style: normal;
-  line-height: calc( 24 / 14);
+  line-height: calc(24 / 14);
 }
 
 .address-link {
