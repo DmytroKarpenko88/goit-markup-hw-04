@@ -77,9 +77,6 @@ button {
   background-repeat: 4px;
 }
 
-.icon {
-  display: block;
-}
 
 .container {
   /* outline: 2px solid rgb(47, 89, 255); */
@@ -96,7 +93,6 @@ button {
 }
 
 .list {
-  list-style: none;
   padding-left: 0;
   margin: 0;
 }
@@ -106,10 +102,6 @@ button {
   align-items: center;
 }
 
-.link {
-  text-decoration: none;
-  /* color: inherit; */
-}
 
 /* ---------- HEADER ----------- */
 .header {
@@ -166,7 +158,7 @@ a.current {
 
 .header-contacts a {
   color: var(--additional-text-color);
-  fill: var(--additional-text-color);
+  fill: currentColor;
 }
 
 .links-nav a:hover,
